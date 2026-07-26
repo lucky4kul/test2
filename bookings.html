@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings | Abbington Farm Park</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation section -->
+    <header>
+        <div class="top-bar">
+            <img src="abbington_logo.png" alt="Abbington Farm Logo" class="logo">
+            <div class="title-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop & Cafe</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="bookings.html" class="active">Bookings</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-block">
+            <h1>Book Your Visit</h1>
+            <p>Plan your day at Abbington Farm Park. Reserve tickets for general admission, the petting zoo, or our
+                upcoming seasonal events in advance to gurantee your spot.</p>
+        </section>
+
+        <!-- Image & Form -->
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+
+            <!-- Image -->
+            <div style="flex: 1; min-width: 300px;">
+                <img src="images/family-petting-zoo.jpg" alt="Family fun at the petting zoo"
+                    style="width: 100%; border-radius: 8px;">
+            </div>
+
+            <!-- Booking Form -->
+            <div style="flex: 1; min-width: 300px;">
+                <form action="#" method="POST"
+                    style="display: flex; flex-direction: column; gap: 1rem; background: #f9f9f9; padding: 2rem; border-radius: 8px;">
+
+                    <label for="name"><strong>Full Name:</strong></label>
+                    <input type="text" id="name" name="name" required style="padding: 0.5rem; border: 1px solid #ccc;">
+
+                    <label for="email"><strong>Email Address:</strong></label>
+                    <input type="email" id="email" name="email" required
+                        style="padding: 0.5rem; border: 1px solid #ccc;">
+
+                    <label for="date"><strong>Date of Visit:</strong></label>
+                    <input type="date" id="date" name="date" required style="padding: 0.5rem; border: 1px solid #ccc;">
+
+                    <label for="tickets"><strong>Number of Tickets:</strong></label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="20" required
+                        style="padding: 0.5rem; border: 1px solid #ccc;">
+
+                    <label for="activity"><strong>Select Activity:</strong></label>
+                    <select id="activity" name="activity" style="padding: 0.5rem; border: 1px solid #ccc;">
+                        <option value="general">General Admission (Play Park & Zoo)</option>
+                        <option value="pumpkin">Autumn Pumpkin Picking</option>
+                        <option value="maze">Summer Corn Maze</option>
+                    </select>
+
+                    <button type="submit" class="btn"
+                        style="padding: 0.75rem; margin-top: 0.5rem; cursor: pointer; background-color: #2e7d32; color: white; border: none; cursor: pointer; border-radius: 4px; font-size: 1rem; margin-top: 1rem;">Complete
+                        Booking</button>
+                </form>
+                <button type="button" onclick="window.print()" class="btn" style="padding: 0.75rem; margin-top: 0.5rem; cursor: pointer; background-color: #4b5563; color: #ffffff; border-radius: 4px;">
+                    Print Booking Form
+                </button>
+            </div>
+        </div>
+    </main>
+    <br>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h2>Abbington Farm Park</h2>
+                <p>Abbington Farm Park, Abbington<br>Biggar, ML12 6RH</p>
+                <p>Tel: <a href="tel:01864502501">01864 502501</a></p>
+                <p>Email: <a href=mailto:info@abbingtonfarm.com>info@abbington.com</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Farm Shop Produce</a></li>
+                    <li><a href="events.html">Upcoming Events</a></li>
+                    <li><a href="https://www.visitscotland.com" target="_blank" rel="noopener">Visit Scotland
+                            (External)</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-circle" aria-label="Facebook">FB</a>
+                    <a href="#" class="social-circle" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-circle" aria-label="Twitter">X</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Abbington Farm Park - All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
